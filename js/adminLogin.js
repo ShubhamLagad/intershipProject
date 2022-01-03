@@ -7,7 +7,7 @@ function adminLogin() {
 
 
     var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("POST", "database/adminLogin.php", true);
+    xmlhttp.open("GET", "database/adminLogin.php", true);
     xmlhttp.onload = function () {
         if (xmlhttp.status == 200) {
             console.log(xmlhttp.responseText);
