@@ -17,7 +17,7 @@ $flag=1;
             $result = mysqli_query($con,$query);
             while($row = mysqli_fetch_assoc($result))
                 {
-                    if($userId==$row['userId'] && $password==$row['password'])
+                    if($_SESSION['userId']==$row['userId'] && $_SESSION['password']==$row['password'])
                     {
                          $flag=0;
                         echo "true";
