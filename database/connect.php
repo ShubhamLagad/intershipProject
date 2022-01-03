@@ -5,10 +5,10 @@
     $database = "sql5462924";
 
     $con = mysqli_connect($host,$user,$password,$database);
-    if($con)
-    {
-        echo "connection successsfull";
-    }else{
-        echo "errorr";
-    }
+    // if($con)
+    // {
+    //     echo "connection successsfull";
+    // }else{
+    //     echo "errorr";
+    // }
     ?>

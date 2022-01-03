@@ -1,5 +1,5 @@
 <?php
-include "connect.php";
+include "./connect.php";
 $data =  file_get_contents("php://input");
 $mydata = json_decode($data,true); 
 // print_r($mydata);
@@ -17,7 +17,7 @@ $flag=1;
             $result = mysqli_query($con,$query);
             while($row = mysqli_fetch_assoc($result))
                 {
-                    if($_SESSION['userId']==$row['userId'] && $_SESSION['password']==$row['password'])
+                    if($userId==$row['userId'] && $password==$row['password'])
                     {
                          $flag=0;
                         echo "true";
